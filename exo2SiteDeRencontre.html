@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+        <legend>les élements du formulaire</legend>
+        <label for="il">Nom : </label>
+        <input 
+            type="text" 
+            pattern="^[A-Z]{2,45}" 
+            id="Nom" 
+            name="Nom"
+            />
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Ici les élements du formulaire</legend>
+        <label for="il">prénom : </label>
+        <input 
+            type="text" 
+            pattern="^([A-Z]{1})[a-z]{2,45}" 
+            id="prénom" 
+            name="prénom"
+            />
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Ici les élements du formulaire</legend>
+        <label for="il">e-mail : </label>
+        <input 
+            type="email" 
+            pattern="^([a-z0-9]+)@([az]+)(\.com|\.net|\.fr|\.org)$ " 
+            id="e-mail" 
+            name="e-mail"
+            />
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Sexe</legend>
+                Sexe :</br>
+                <input 
+                type="radio" 
+                name="Sexe" />Masculin
+                <input 
+                type="radio" 
+                name="Sexe" 
+                checked />féminin
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>image</legend>
+        <input 
+            type="file" 
+            id="image" 
+            name="image" 
+            accept=".png,.jpeg">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Pays</legend>
+        <label for="Pays">liste des pays :
+            <select name="Pays" id="Pays">
+                <option value="France">France</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemangne" selected>Allemangne</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Italie">Italie</option>
+            </select>
+        </label>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>langues</legend>
+        <label> liste de choix multiples pour les langues :
+            <select name="Langue" multiple>
+                <option value="Français">Français</option>
+                <option value="Anglais">Anglais</option>
+                <option value="Allemand" selected>Allemand</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Espagnol">Espagnol</option>
+                <option value="Italien">Italien</option>
+            </select>
+        </label>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>quel métier faite vous</legend>
+        
+            <div>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Plombier</label>
+            </div>
+            <div>
+              <input type="checkbox" id="horns" name="horns">
+              <label for="horns">Électricien</label>
+            </div>
+            <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Maçon</label>
+            </div>
+            <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Carreleur</label>
+            </div>
+            <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Menuisier</label>
+            </div>
+            <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Couvreur</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
